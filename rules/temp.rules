@@ -1,0 +1,12 @@
+import org.openhab.core.library.types.*
+import org.openhab.core.persistence.*
+import org.openhab.model.script.actions.*
+
+rule "Convert_Temp_EG"
+when
+    Item Node01Temperature changed  
+then
+    var tempCelsius = (Node01Temperature.state as DecimalType).doubleValue
+    var tempFahrenheit = (tempCelsius * 1.8 ) + 32;
+    postUpdate(Node01TemperatureF, tempFahrenheit)
+end

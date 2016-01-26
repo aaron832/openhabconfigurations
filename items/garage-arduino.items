@@ -1,0 +1,3 @@
+Number	Node01Temperature	"Temperature [%.1f C]"	<temperature>	(Garage,Temp)		{ mqtt="<[mymosquitto:home/garage/temp1:state:default]" }
+Number	Node01TemperatureF	"Temperature [%.1f F]"	<temperature>	(Garage,Temp) {}
+Number	Node01Humidity	"Humidity [%.1f %%]"	<water>	(Garage,Humid)		{ mqtt="<[mymosquitto:home/garage/humid1:state:default]" }

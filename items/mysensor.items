@@ -1,0 +1,6 @@
+String Arduino "Arduino" { serial="/dev/ttyMySensorsGateway@115200" }
+
+Number tempGarage01 "Temperature [%s F]" <temperature> (temperature,humAndTemp)
+Number humGarage01 "Humidity [%s %%]" <temperature> (humidity,humAndTemp)
+Number bayDoorGarage01     "Bay Door Status [%s]" <garagebaydoor> (DoorSensors)
+Number doorGarage01     "Door Status [%s]" <garagebaydoor> (DoorSensors)

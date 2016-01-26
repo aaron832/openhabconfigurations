@@ -1,0 +1,9 @@
+sitemap demo label="Test OpenSensor"
+{
+	Frame label="Sensor Node 1"  {
+		Text item=tempGarage01
+		Text item=humGarage01
+		Text item=bayDoorGarage01
+		Text item=doorGarage01
+	}
+}
