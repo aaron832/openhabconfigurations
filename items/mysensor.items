@@ -1,6 +1,6 @@
-String Arduino "Arduino" { serial="/dev/ttyMySensorsGateway@115200" }
+Number tempGarage01 "Temperature [%s F]" <temperature> (temperature,humAndTemp) { mqtt="<[mymosquitto:/mySensors/105/1/V_TEMP:state:default]" }
+Number humGarage01 "Humidity [%s %%]" <temperature> (humidity,humAndTemp) { mqtt="<[mymosquitto:/mySensors/105/0/V_HUM:state:default]" }
+Number bayDoorGarage01     "Bay Door Status [%s]" <garagebaydoor> (DoorSensors) { mqtt="<[mymosquitto:/mySensors/105/2/V_TRIPPED:state:default]" }
+Number doorGarage01     "Door Status [%s]" <garagebaydoor> (DoorSensors) { mqtt="<[mymosquitto:/mySensors/105/3/V_TRIPPED:state:default]" }
 
-Number tempGarage01 "Temperature [%s F]" <temperature> (temperature,humAndTemp)
-Number humGarage01 "Humidity [%s %%]" <temperature> (humidity,humAndTemp)
-Number bayDoorGarage01     "Bay Door Status [%s]" <garagebaydoor> (DoorSensors)
-Number doorGarage01     "Door Status [%s]" <garagebaydoor> (DoorSensors)
+String sensorGarage "Garage Sensor [%s]" (mysensors) { mqtt="<[mymosquitto:/mySensors/105/255/I_SKETCH_VERSION:state:default]" }
