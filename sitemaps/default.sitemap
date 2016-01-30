@@ -1,10 +1,12 @@
 sitemap demo label="Rose House"
 {
-	Frame label="Sensor Node 1"  {
-		Text item=Node01Temperature
-		Text item=Node01TemperatureF
-		Text item=Node01Humidity
-	}
+        Frame label="Garage"  {
+				Text item=sensorGarage
+                Text item=tempGarage01
+                Text item=humGarage01
+                Text item=bayDoorGarage01
+                Text item=doorGarage01
+        }
 
 	Frame label="Home" icon="house" {
     		Switch item=home_away mappings=[home="Home",away="Away"]
